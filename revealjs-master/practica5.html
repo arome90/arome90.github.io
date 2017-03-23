@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+      		<section>
+        		<h1><font color="red">JavaScript</font></h1>
+        		<hr>
+        		<h2>Alejandro Romero Hernandez</h2>
+        		<hr>
+        		<h3>MLD - PMED</h3>
+      		</section>
+
+          <section>
+            <h3>Contenido</h3>
+              <ol>
+                 <li><a href="#/prosYContras">PROS Y CONTRAS</a></li>
+                 <li><a href="#ejemplos">Ejemplos</a></li>
+              </ol>
+          </section>
+
+          <section id="prosYContras" data-transition="zoom">
+            <section data-background-image="./pros-contras.jpg"><h3>PROS Y CONTRAS</h3></section>
+            <section data-markdown>
+              <script type="text/template">
+               <!-- .slide: data-background="#407A2F" -->
+                ## Posibilidades de JavaScript
+
+                1. La estandarización de JavaScript en todos los navegadores nos permite crear innumerables tipos de aplicaciones web.<!-- .element: class="fragment" data-fragment-index="2"-->
+                2. Librerias:<!-- .element: class="fragment" data-fragment-index="3" -->
+                  1. **Jquery.**<!-- .element: class="fragment" data-fragment-index="4" -->
+                  2. AJAX.<!-- .element: class="fragment" data-fragment-index="5" -->
+                  3. *Librerias para videojuegos.*<!-- .element: class="fragment" data-fragment-index="6" -->
+              </script>
+            </section>
+            <section data-markdown data-background-transition="zoom">
+              <script type="text/template">
+               <!-- .slide: data-background="#7A332F" -->
+                ## Las limitaciones de JavaScript
+
+                * No pueden comunicarse con recursos cuya URL no tenga el mismo dominio, puerto y protocolo desde el que se descargó el script <!-- .element: class="fragment" data-fragment-index="2" -->
+                * No pueden cerrar ventanas que no hayan abierto esos mismos scripts.<!-- .element: class="fragment" data-fragment-index="3" -->
+                * No pueden acceder al sistema de ficheros, ni para leer ni para escribir<!-- .element: class="fragment" data-fragment-index="4" -->
+              </script>
+            </section>
+            <section data-markdown>
+              <script type="text/template">
+               <!-- .slide: data-background="#7A332F" -->
+                ## Las limitaciones de JavaScript
+
+                * No pueden acceder a las preferencias del navegador.<!-- .element: class="fragment" data-fragment-index="2" -->
+                * Si la ejecución de un script dura demasiado tiempo el navegador informa al usuario de que el script está consumiendo demasiados recursos y le da la posibilidad de detener su ejecución.<!-- .element: class="fragment" data-fragment-index="3" -->
+              </script>
+            </section>
+          </section>
+
+          <section id="ejemplos" data-transition="zoom-in fade-out">
+            <section><h3>Ejemplos Motivantes</h3></section>
+                  <section data-background-video="Story.mp4"> 
+                    <h3 class="fragment fade-up">Puedes hacer cosas tan chulas como ésta</h3>
+                  </section>
+
+          </section>
+
+        </div>
+      </div>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        <script>
+            Reveal.initialize({
+              // Mostrar numero de slide.
+              slideNumber: true,
+
+              // Milisegundos entre transiciones automaticas de slides.
+              autoSlide: 2000,
+
+              // Tipo de transicion.
+              transition: 'convex',
+
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              
+              dependencies: [
+    // Para interpretar Markdown en los elementos <section>
+                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+              ]
+            });
+        </script>
+    </body>
+</html>
