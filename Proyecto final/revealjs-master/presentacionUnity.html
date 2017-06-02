@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+      		<section>
+        		<h1><font color="red">Unity 3D</font></h1>
+        		<hr>
+        		<h2>Alejandro Romero Hernandez</h2>
+        		<hr>
+        		<h3>MLD - PMED</h3>
+      		</section>
+
+          <section>
+            <h3>Contenido</h3>
+              <ol>
+                 <li><a href="#/primerosPasos">Primeros pasos</a></li>
+                 <li><a href="#/plugins">Plugins</a></li>
+                 <li><a href="#ejemplos">Ejemplos</a></li>
+              </ol>
+          </section>
+
+          <section id="primerosPasos" data-transition="zoom">
+            <section data-background-image="./primerosPasos.jpg"><h3>Primeros pasos</h3></section>
+            <section data-markdown data-background-image="./unity-logo.jpg">
+              <script type="text/template">
+                ## Descarga
+
+                Pagina oficial de [Unity3D](https://unity3d.com/es)
+
+              </script>
+            </section>
+            <section data-markdown data-background-transition="zoom" data-background-image="./unity-logo.jpg">
+              <script type="text/template">
+                ## Instalación 
+
+                [Como instalarlo](https://www.youtube.com/watch?v=YguTutW-zK8)
+
+              </script>
+            </section>
+            <section data-markdown>
+              <script type="text/template">
+                ## Abrir y crar cuenta 
+
+                1. [Como abrir unity 3D](https://www.youtube.com/watch?v=ts1aLBRNLmM)
+                2. [Crearse una cuenta](https://www.youtube.com/watch?v=qAkLFy2nfs0)
+
+              </script>
+            </section>
+          </section>
+
+          <section id="plugins" data-transition="zoom">
+            <section data-background-image="./Unity-Asset-Store.png"><h3>Plugins</h3></section>
+            <section data-markdown>
+              <script type="text/template">
+
+                ## Descarga
+
+                Pagina oficial de [Unity3D](https://unity3d.com/es)
+
+              </script>
+            </section>
+            <section data-markdown data-background-transition="zoom">
+              <script type="text/template">
+                ## Instalación 
+
+                [Como instalarlo](https://www.youtube.com/watch?v=YguTutW-zK8)
+
+              </script>
+            </section>
+            <section data-markdown data-background-image="./unity-logo.jpg">
+              <script type="text/template">
+
+                ## Abrir y crar cuenta 
+
+                1. [Como abrir unity 3D](https://www.youtube.com/watch?v=ts1aLBRNLmM)
+                2. [Crearse una cuenta](https://www.youtube.com/watch?v=qAkLFy2nfs0)
+
+              </script>
+            </section>
+          </section>
+        </div>
+      </div>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        <script>
+            Reveal.initialize({
+              // Mostrar numero de slide.
+              slideNumber: true,
+
+              // Milisegundos entre transiciones automaticas de slides.
+              autoSlide: 2000,
+
+              // Tipo de transicion.
+              transition: 'convex',
+
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              
+              dependencies: [
+    // Para interpretar Markdown en los elementos <section>
+                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+              ]
+            });
+        </script>
+    </body>
+</html>
